@@ -18,7 +18,6 @@ const Animation = () => {
     };
   }, []);
 
-  console.log(scrollPosition);
   return (
     <div className={`container`}>
       <div
