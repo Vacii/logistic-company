@@ -9,9 +9,16 @@ function Navbar() {
   };
 
   return (
-    <header className="flex items-center justify-between h-20 px-10vw text-secondaryColor">
+    <header
+      className="flex items-center justify-between h-16 w-full px-10vw text-secondaryColor"
+      style={{ zIndex: 1000 }}
+    >
       <h3 className="tracking-widest">RIVASPED</h3>
-      <nav ref={navRef} className="flex items-center">
+      <nav
+        ref={navRef}
+        className="flex items-center responsive_nav"
+        style={{ zIndex: 999 }}
+      >
         <a href="/#" className="mr-4">
           Domu
         </a>

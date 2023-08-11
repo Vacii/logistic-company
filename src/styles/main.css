@@ -20,12 +20,14 @@ body {
 }
 
 header {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
   padding: 0 10vw;
   color: #e8c065;
+  background-color: var(--mainColor);
 }
 
 nav a {
@@ -73,6 +75,7 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    z-index: 100;
     background-color: var(--mainColor);
     transition: 1s;
   }
@@ -94,4 +97,11 @@ nav {
 
 main h1 {
   font-size: 9.6vw;
+}
+
+.animated-element {
+  position: fixed;
+  width: 80%;
+  transition: transform 0.5s ease;
+  z-index: 1; /* Add this line */
 }
