@@ -98,10 +98,3 @@ nav {
 main h1 {
   font-size: 9.6vw;
 }
-
-.animated-element {
-  position: fixed;
-  width: 80%;
-  transition: transform 0.5s ease;
-  z-index: 1; /* Add this line */
-}

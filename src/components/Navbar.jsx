@@ -14,12 +14,8 @@ function Navbar() {
       style={{ zIndex: 1000 }}
     >
       <h3 className="tracking-widest">RIVASPED</h3>
-      <nav
-        ref={navRef}
-        className="flex items-center responsive_nav"
-        style={{ zIndex: 999 }}
-      >
-        <a href="/#" className="mr-4">
+      <nav ref={navRef} className="flex items-center" style={{ zIndex: 999 }}>
+        <a href="/" className="mr-4">
           Domu
         </a>
         <a href="/#" className="mr-4">
