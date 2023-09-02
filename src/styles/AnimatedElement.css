@@ -28,7 +28,7 @@
   position: absolute;
   color: #eee;
   opacity: 0; /* Initially set the opacity to 0 */
-  transition: opacity 0.2s ease-in; /* Add a transition effect for opacity */
+  transition: opacity 0.1s ease-in; /* Add a transition effect for opacity */
 }
 
 .button-show {

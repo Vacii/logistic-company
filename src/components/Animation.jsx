@@ -25,9 +25,9 @@ const Animation = () => {
           scrollPosition >= triggerPoint ? "scroll-up" : ""
         }`}
       >
-        <div className="">
+        <div className="md:mt-10">
           <h1
-            className="font-bold w-[90%] pt-8 lg:text-[110px]"
+            className="font-bold  w-full pt-8 lg:text-[110px]"
             style={
               scrollPosition >= triggerPoint
                 ? { transform: `translateY(-${scrollPosition - 1000}px)` }
@@ -37,7 +37,7 @@ const Animation = () => {
             Dopravní <span className="text-custom-yellow">řešení</span>
           </h1>
           <h1
-            className="font-bold w-[90%] pb-8 lg:text-[110px]"
+            className="font-bold w-full pb-8 lg:text-[110px]"
             style={
               scrollPosition >= triggerPoint
                 ? { transform: `translateY(-${scrollPosition - 1000}px)` }
@@ -47,9 +47,9 @@ const Animation = () => {
             pro vaši firmu
           </h1>
         </div>
-        <div className="flex justify-center w-full mt-24">
+        <div className="flex justify-center w-full mt-20">
           <button
-            className={`button-element mt-16 p-5 bg-custom-yellow rounded-full font-bold text-xl ${
+            className={`button-element mt-16 p-5 md:p-10 bg-custom-yellow rounded-full font-bold text-xl md:text-4xl ${
               scrollPosition >= buttonTrigger ? "button-show" : ""
             }`}
             style={
@@ -63,11 +63,17 @@ const Animation = () => {
         </div>
         <img
           src={truckImage}
-          className={`image-element ${
-            scrollPosition >= triggerPoint ? "hidden" : ""
+          className={`image-element lg:right-0 ${
+            scrollPosition >= triggerPoint ? "scroll-up" : ""
           }`}
           alt="Truck"
-          style={{ transform: `translateX(-${scrollPosition}px)` }}
+          style={{
+            transform: `translateX(-${scrollPosition}px) ${
+              scrollPosition >= triggerPoint
+                ? `translateY(-${scrollPosition - 1000}px)`
+                : ""
+            }`,
+          }}
         />
       </div>
     </div>
