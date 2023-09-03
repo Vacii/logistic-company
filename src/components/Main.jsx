@@ -3,6 +3,7 @@ import "../styles/main.css";
 import Animation from "./Animation.jsx";
 import { About } from "./About";
 import { Contact } from "./Contact";
+import { Transfer } from "./Transfer";
 
 export default function Main() {
   return (
@@ -11,6 +12,7 @@ export default function Main() {
         <Animation />
       </div>
       <About />
+      <Transfer />
       <Contact />
     </main>
   );
