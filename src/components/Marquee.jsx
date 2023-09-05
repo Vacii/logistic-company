@@ -37,7 +37,6 @@ const Marquee = () => {
         <img src="src/assets/spur.png" alt="spur_logo" className="h-10" />
         <img src="src/assets/intersport.png" alt="spur_logo" className="h-10" />
         <img src="src/assets/spur.png" alt="spur_logo" className="h-10" />
-        <img src="src/assets/spur.png" alt="spur_logo" className="h-10" />
         <img src="src/assets/intersport.png" alt="spur_logo" className="h-10" />
         <img src="src/assets/spur.png" alt="spur_logo" className="h-10" />
         <img src="src/assets/intersport.png" alt="spur_logo" className="h-10" />
@@ -47,7 +46,6 @@ const Marquee = () => {
         <img src="src/assets/intersport.png" alt="spur_logo" className="h-10" />
         <img src="src/assets/spur.png" alt="spur_logo" className="h-10" />
         <img src="src/assets/intersport.png" alt="spur_logo" className="h-10" />
-        <img src="src/assets/spur.png" alt="spur_logo" className="h-10" />
       </motion.div>
     </div>
   );

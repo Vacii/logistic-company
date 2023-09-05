@@ -6,13 +6,13 @@ import Marquee from "./Marquee";
 export const About = () => {
   return (
     <section id="about" className="w-full mt-10">
-      <div className="content py-10 px-10">
+      <div className="content py-10 px-10 lg:px-[10vw]">
         <motion.h2
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.3 }}
           viewport={{ once: true }}
-          className="text-white text-4xl font-bold tracking-wide"
+          className="text-white text-4xl md:text-[4vw] font-bold tracking-wide"
         >
           Kdo jsme?
         </motion.h2>

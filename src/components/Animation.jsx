@@ -48,7 +48,8 @@ const Animation = () => {
           </h1>
         </div>
         <div className="flex justify-center w-full mt-20">
-          <button
+          <a
+            href="/#contact"
             className={`button-element mt-16 p-5 md:p-10 bg-custom-yellow rounded-full font-bold text-xl md:text-4xl ${
               scrollPosition >= buttonTrigger ? "button-show" : ""
             }`}
@@ -59,7 +60,7 @@ const Animation = () => {
             }
           >
             Kontaktujte nás
-          </button>
+          </a>
         </div>
         <img
           src={truckImage}

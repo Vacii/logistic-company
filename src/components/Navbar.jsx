@@ -13,19 +13,21 @@ function Navbar() {
       className="flex items-center justify-between h-16 w-full px-10vw text-secondaryColor"
       style={{ zIndex: 1000 }}
     >
-      <h3 className="tracking-widest">RIVASPED</h3>
+      <a href="/" className="tracking-widest">
+        RIVASPED
+      </a>
       <nav ref={navRef} className="flex items-center" style={{ zIndex: 999 }}>
-        <a href="/" className="mr-4">
-          Domu
+        <a href="/" className="mr-4" onClick={showNavbar}>
+          Domů
         </a>
-        <a href="/#" className="mr-4">
+        <a href="/#about" className="mr-4" onClick={showNavbar}>
           O nás
         </a>
-        <a href="/#" className="mr-4">
-          Účetnictví
+        <a href="/#cargo" className="mr-4" onClick={showNavbar}>
+          Co převážíme
         </a>
-        <a href="/#" className="mr-4">
-          Kontakty
+        <a href="/#contact" className="mr-4" onClick={showNavbar}>
+          Kontakt
         </a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
