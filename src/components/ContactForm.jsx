@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -33,35 +34,39 @@ export const ContactForm = (animation) => {
 
   return (
     <>
-      <form
+      <motion.form
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.3 }}
+        viewport={{ once: true }}
         ref={form}
         onSubmit={sendEmail}
-        className="flex flex-col justify-center items-center gap-4 w-[40%]"
+        className="flex flex-col justify-center items-center gap-4 pt-20 w-[80%] md:w-[60%] lg:w-[40%]"
       >
         <input
           type="text"
           name="user_name"
           ref={name}
-          placeholder="Type your name"
+          placeholder="Vaše jméno"
           className="px-3 py-3 w-full shadow-lg rounded-xl"
         />
         <input
           type="email"
           name="user_email"
           ref={mail}
-          placeholder="Type your email"
+          placeholder="Váš email"
           className="px-3 py-3 w-full shadow-lg rounded-xl"
         />
         <textarea
           name="message"
           ref={message}
           className="px-3 py-3 h-[200px] w-full resize-none shadow-lg rounded-xl"
-          placeholder="Type a message"
+          placeholder="Zpráva, kterou chcete zanechat"
         />
-        <button className="mt-5 shadow-xl bg-custom-yellow text-white py-3 px-10 rounded-2xl">
-          Send
+        <button className="mt-5 shadow-xl outline outline-1 outline-custom-yellow hover:bg-custom-yellow text-white py-3 px-10 rounded-xl">
+          Odeslat
         </button>
-      </form>
+      </motion.form>
       <ToastContainer
         position="top-right"
         autoClose={2000}
