@@ -5,7 +5,7 @@ import "../styles/Marquee.css";
 // Define Variants
 const marqueeVariants = {
   loop: {
-    x: [0, -635],
+    x: [0, -235],
     transition: {
       x: {
         repeat: Infinity,

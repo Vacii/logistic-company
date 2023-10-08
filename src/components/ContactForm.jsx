@@ -15,7 +15,12 @@ export const ContactForm = (animation) => {
 
     try {
       const result = await toast.promise(
-        emailjs.sendForm("TODO", "TODO", form.current, "TODO"),
+        emailjs.sendForm(
+          "service_ageqo9a",
+          "template_p50vykq",
+          form.current,
+          "pGkkJGWFk6TcgDzP2"
+        ),
         {
           pending: "Email se odesílá...", // Displayed while the promise is pending
           success: "Email byl úspěšně odeslán! 🙌🏻", // Displayed on success

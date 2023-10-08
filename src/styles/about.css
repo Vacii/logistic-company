@@ -1,0 +1,13 @@
+@media (min-width: 1024px) {
+  .glow {
+    box-shadow: 0 0 20px 5px #e8c065;
+  }
+
+  .bg-image-networking {
+    background-image: url("/networking.webp");
+  }
+
+  .bg-image-eu {
+    background-image: url("/eu.webp");
+  }
+}
